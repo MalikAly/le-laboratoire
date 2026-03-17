@@ -55,6 +55,7 @@ export function Modal({ isOpen, onClose, title, children, size = 'md' }: ModalPr
       ref={dialogRef}
       onClick={handleBackdropClick}
       className={cn(
+        'fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2',
         'w-full rounded-xl shadow-xl p-0 backdrop:bg-black/50 backdrop:backdrop-blur-sm',
         'open:flex open:flex-col',
         sizeClasses[size],
